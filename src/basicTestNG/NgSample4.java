@@ -91,9 +91,6 @@ public class NgSample4 {
 		 */
 	}
 
-
-	
-
 	//1
 	@BeforeTest
 	public void NgSample4BeforeTestM1() {
@@ -103,7 +100,7 @@ public class NgSample4 {
 
 	@AfterTest
 	public void NgSample4AfterTestM1() {
-		System.out.println("NgSample4AfterTestM1");		
+		System.out.println("NgSample4AfterTestM1");	
 
 	}
 

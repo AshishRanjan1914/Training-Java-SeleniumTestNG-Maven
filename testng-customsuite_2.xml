@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parameters suite">
+  <parameter name="my-name"  value="TestNG"/>
+  <parameter name="my-age"  value="10"/>
+  <parameter name="my-anotherparamname" value="someparamValue"/>
+  <test verbose="2" name="ParameterTests">
+    <classes>
+      <class name="basicTestNG.NgSample3"/>
+    </classes>
+  </test> <!-- Default test -->
+</suite> <!-- Default suite -->
