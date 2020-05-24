@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AutomationDemoTestNG_SUite" parallel="tests" thread-count="2">
+  
+  <test thread-count="5" name="MySampleTest3">
+    <classes>     
+      <class name="basicTestNG.NgSample4"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="MySampleTest2">
+    <classes>      
+      <class name="basicTestNG.NgSample3"/>      
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="MySampleTest1">
+    <classes>
+      <class name="basicTestNG.NgSample2"/>
+      <class name="basicTestNG.NgSample1"/>      
+    </classes>
+  </test> <!-- Test -->
+  
+  <!-- test thread-count="5" name="MySampleTest4">
+    <packages>
+      <package name="basicTestNG" />
+   </packages>
+  </test --> 
+  
+  <test thread-count="5" name="MySampleTest5">
+    <groups>
+    <run>
+      <include name="Sanity"/>
+    </run>
+  </groups>
+  <classes>
+      <class name="basicTestNG.NgSample2"/>
+      <class name="basicTestNG.NgSample1"/>      
+    </classes>
+
+  </test> <!-- Test -->
+  
+    
+</suite> <!-- Suite -->
